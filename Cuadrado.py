@@ -1,3 +1,13 @@
+from figurageometrica import *
+class Cuadrado(figurageometrica):
+    def init(self, lado):
+        super().init(lado, lado)
 
-class Cuadrado:
-  def __init__(self alto, ancho):
+    def area(self):
+        return self.alto * self.ancho
+
+    def str(self):
+        return f"Cuadrado - lado: {self.alto}, área: {self.area()}"
+
+
+
