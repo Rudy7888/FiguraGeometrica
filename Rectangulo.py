@@ -7,7 +7,7 @@ class Rectangulo(figurageometrica):
         return self.alto * self.ancho
 
     def __str__(self):
-        return f"Rectángulo - alto: {self.alto}, ancho: {self.ancho}, área: {self.area()}"
+        return f"Rectángulo -> {self.__dict__.__str__()}"
 
 if __name__ == '__main__':
     rectangulo = Rectangulo (16, 6)
