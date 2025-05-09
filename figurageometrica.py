@@ -14,8 +14,15 @@ class figurageometrica:
     @ancho.setter
     def ancho(self, valor):
         self._ancho = valor
+
+    def area(self):
+        return self.alto * self.ancho
+
+    def perimetro(self ):
+        return 2 * self.alto + 2 * self.ancho
+
     def __str__(self):
-        return f'alto: {self.alto}, ancho: {self.ancho}'
+        return f'figura geometrica: {self.__dict__.__str__()}'
 
 if __name__ == '__main__':
     fg = figurageometrica(8,5)

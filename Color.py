@@ -1,6 +1,6 @@
 class Color:
     def __init__(self, valor):
-        self._nombre = nombre
+        self._nombre = valor
     def __str__(self):
         return f"Color -> {self.__dict__.__str__()}"
     @property
@@ -10,6 +10,6 @@ class Color:
     def nombre(self, nombre):
         self._nombre = nombre
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
         c1 = Color("Rojo")
         print(c1)
