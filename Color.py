@@ -13,3 +13,4 @@ class Color:
 if __name__ == "__main__":
         c1 = Color("Rojo")
         print(c1)
+
